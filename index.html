@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnVIC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: bisque;">
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="#logo"><img src="logo.jpeg" alt=""></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#games">Engaging Games</a></li>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#notes">Notes</a></li>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#interaction">Interaction</a></li>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <li><a href="#signup">Signup</a></li>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </ul>
+            </nav>
+        </header>
+
+        <section id="games">
+            <form action="method.python">
+            <fieldset>
+            <legend><h2 style="background-color: chartreuse;">ENGAGING GAMES</h2></legend> <center><img src="studyisfun.gif" alt="" id="studyisfun"> </center><br>
+            <div class="game">
+                <h3>Puzzles Game <input type="radio" name="game" id="gameradio" required></h3>
+                 <p>A question will appear and there would be 4 doors. 1 of the doors carries the correct solution which leads to the next round. The student can save their high score based on the number of rooms they enter.</p>
+            </div>
+            <div class="game">
+                <h3>Catch The Balls <input type="radio" name="game" id="gameradio2" required></h3>
+                <p>A man standing on the ground level carrying a question, and solutions will fall from the sky in the form of balls. The man has to collect the right solution in a specific time based on the difficulty level of the question. Each game has 3 lives.</p>
+            </div>
+                <button class="PLAYbutton">Play</button>
+
+                
+
+            </fieldset>
+            </form>
+        </section>
+
+        <section id="notes">
+            <form action="method.python">
+            <fieldset>
+            <legend><h2 style="background-color: aquamarine;">NOTES ACCESS/UPLOAD</h2></legend>
+            <p>Students or teachers can upload their notes for other students. As a person uploads notes, they will earn points, and reaching a certain amount of points will earn them reward money vouchers. Completing a particular course in a certain time rewards students with free study material.</p>
+            <select id="selectnotes">
+                <option value="">--please select--</option>
+                <option value="UPLOADED_NOTES" >UPLOAD NOTES</option>
+                <option value="FREE_NOTES" >FREE NOTES</option>
+            </select>
+                <br>
+            <button id="submitnotes">Submit</button>
+            <br> <br> <br> <br> <center>
+            <img src="notesgif.gif" alt=""></center>
+            </fieldset>
+            </form>
+        </section>
+
+        <section id="interaction">
+            <form action="method.python">
+            <fieldset>
+            <legend><h2 style="background-color: darkorchid;">SOCIAL INTERACTION</h2></legend>
+            <p>Students can create a friend list, ask doubts, and share solutions with their peers.</p>
+            <p><samp> ENTER FREIND'S USERNAME:</samp> <input type="text" name="friend_name" id="friend_name"></p>
+            <input type="submit" value="SEARCH"> <br> <br> <br> <br>
+            <center><img src="giphy.gif" alt=""></center>
+            </fieldset>
+            </form>
+        </section>
+
+
+        <section id="leaderboards">
+            <fieldset>
+            <legend><h2>Leaderboards</h2></legend>
+            <p>Students can see how they stack up against their peers on leaderboards.</p>
+            
+<div class="leaderboard-container">
+    <h1>Leaderboard</h1>
+    <table class="leaderboard-table">
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Student Name</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Student 1 -->
+        <tr>
+          <td>1</td>
+          <td>John Doe</td>
+          <td>95</td>
+        </tr>
+        <!-- Student 2 -->
+        <tr>
+          <td>2</td>
+          <td>Jane Smith</td>
+          <td>90</td>
+        </tr>
+        <!-- Student 3 -->
+        <tr>
+          <td>3</td>
+          <td>Bob Johnson</td>
+          <td>85</td>
+        </tr>
+        <!-- Student 4 -->
+        <tr>
+          <td>4</td>
+          <td>Alice Brown</td>
+          <td>80</td>
+        </tr>
+        <!-- Student 5 -->
+        <tr>
+          <td>5</td>
+          <td>Mike Davis</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Ritesh</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Vasudev</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Sumit Yadav</td>
+          <td>75</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+            </fieldset>
+        </section>
+
+        <section id="signup">
+            <form action="method.python">
+            <fieldset>
+            <legend><h2>Signup</h2></legend>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <input type="submit" value="Signup">
+            </form>
+            </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Study Platform. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
